@@ -25,72 +25,40 @@
 * Duplicated code - a code smell/anti-pattern; the same code, sometimes with small changes, is found in multiple places in the software. Indicates that the developer could make better use of generalization.
 * Entity object - an object that encapsulates what the software is interested in representing. Usually provides methods for interacting with the data therein.
 * Facade pattern - a design pattern that involves encapsulating a complex system in a simple interface.
-
 * Factory Method pattern - a pattern that delegates concrete instantiation to a method of a subclass.
-* Factory Object - any object whose main purpose is concrete instantiation, i.e. actually creating objects
+* Factory Object - any object whose main purpose is concrete instantiation, i.e., actually creating objects
 * Feature envy - a code smell/anti-pattern; two classes that would be better together, usually indicated by frequently invoking each other's methods.
 * Gang of Four - the four co-authors of the textbook: ‘Design Patterns: Elements of Reusable Object-Oriented Software’, a seminal work in object-oriented design and the source of many design patterns.
 * Generalization - a design principle dictating that behaviour should be generalized where possible. General solutions can be applied more widely.
 * Inappropriate intimacy - a code smell/anti-pattern; two classes that should have a further degree of separation.
-
-information hiding - a design principle dictating that information that is not essential outside a class should be hidden from other classes. Sometimes synonymous with encapsulation.
-
-inheritance - when a subtype or subclass inherits behaviours and methods from the supertype or superclass.
-
-Interface Segregation principle - a design principle that recommends having smaller, more specific interfaces so that clients are not dependent on methods that they do not use.
-
-large class - a code smell/anti-pattern; a class is very large. Indicates that there may need to be better separation of concerns. What is considered "large" may vary considerably depending on complexity.
-
-lazy creation/lazy initialization - instantiating an object when it is needed rather than at startup, improving boot time. 
-
-leaf class - a class that cannot or should not be subtyped. Can be enforced with the final keyword in Java.
-
-long method - a code smell/anti-pattern; a method is very large. Indicates that there may need to be better separation of concerns. What is considered large may vary considerably, e.g. initializing visual elements is typically code-heavy.
-
-long parameter list - a code smell/anti-pattern; a method has a long list of parameters, making the method difficult to use properly. Can sometimes be fixed by passing parameter objects that encapsulate common parameters.
-
-Mediator pattern - a behavioural pattern in which a central object coordinates the activities of many objects.
-
-message chains - a code smell/anti-pattern; a chain of object returns and methods calls is strung together. A violation of the principle of least knowledge.
-
-MVC pattern - stands for Model, View, Controller. A pattern that separates data, display, and control functions into separate roles.
-
-model - the data or 'backend' component of the MVC pattern. An entity object.
-
-Observer pattern - a behavioural pattern for event handling.
-
-Open/Closed principle - a design principle dictating that an object should be open to extension, but closed to modification.
-
-pattern language - a method of describing good design practices or patterns in a field of expertise.
-
-polymorphism - the ability to interact with objects of different types in the same way. Usually achieved through inheritance or through interfaces in Java.
-
-primitive obsession - a code smell/anti-pattern; inappropriate or extensive use of primitive data types.
-
-principle of least knowledge - a design principle stating that classes should know about and interact with as few other classes as possible. Also called the Law of Demeter. Similar to the "need to know" principle in organizations.
-
-Refactoring - the process of changing code so that external behaviours and interfaces are unchanged but internal structure is improved.
-
-refused bequest - a code smell; subclasses are inheriting methods that they do not need. Could be an indication that the method should be defined in subclasses.
-
-Separation of concerns - a design principle dictating that a program should separate different concerns or functions into separate objects or processes. Allows for easier maintenance and loose coupling.
-
-shotgun surgery - a change in one place that necessitates many other changes; a symptom of tight coupling.
-
-Singleton pattern - a design pattern that enforces a single instantiation of a class that is globally accessible.
-
-speculative generality - a code smell/anti-pattern; defining a superclass or interface before it is needed.
-
-State pattern - a behavioural pattern for handling requests taking into account the current state of the object.
-
-structural patterns - design patterns that describe how objects are connected to one another.
-
-subclass - a class that inherits from a parent class, called a superclass. 
-
-subtype - a data type that inherits from a parent type, called a supertype.
-
-switch statements - a code smell/anti-pattern; using switch statements to dictate behaviour where polymorphism is a better solution.
-
-Template Method pattern - a behavioural pattern that allows for similar behaviour to be inherited by multiple subclasses.
-
-View - the display or user-interface component of the MVC pattern. A boundary object or objects because they are responsible for interfacing with the user.
+* Information hiding - a design principle dictating that information that is not essential outside a class should be hidden from other classes. Sometimes synonymous with encapsulation.
+* Inheritance - when a subtype or subclass inherits behaviours and methods from the supertype or superclass.
+* Interface Segregation principle - a design principle that recommends having smaller, more specific interfaces so that clients are not dependent on methods that they do not use.
+* large class - a code smell/anti-pattern; a class is very large. Indicates that there may need to be better separation of concerns. What is considered "large" may vary considerably depending on complexity.
+* lazy creation/lazy initialization - instantiating an object when it is needed rather than at startup, improving boot time.
+* Leaf class - a class that cannot or should not be subtyped. It can be enforced with the final keyword in Java.
+* Long method - a code smell/anti-pattern; a method is very large. Indicates that there may need to be better separation of concerns. What is considered large may vary considerably, e.g., initializing visual elements is typically code-heavy.
+* Long parameter list - a code smell/anti-pattern; a method has a long list of parameters, making the method difficult to use properly. Can sometimes be fixed by passing parameter objects that encapsulate common parameters.
+* Mediator pattern - a behavioural pattern in which a central object coordinates the activities of many objects.
+* Message chains - a code smell/anti-pattern; a chain of object returns and method calls is strung together. A violation of the principle of least knowledge.
+* MVC pattern - stands for Model, View, Controller. A pattern that separates data, display, and control functions into separate roles.
+* Model - the data or 'backend' component of the MVC pattern. An entity object.
+* Observer pattern - a behavioural pattern for event handling.
+* Open/Closed principle - a design principle dictating that an object should be open to extension, but closed to modification.
+* Pattern language - a method of describing good design practices or patterns in a field of expertise.
+* Polymorphism - the ability to interact with objects of different types in the same way. Usually achieved through inheritance or through interfaces in Java.
+* Primitive obsession - a code smell/anti-pattern; inappropriate or extensive use of primitive data types.
+* Principle of least knowledge - a design principle stating that classes should know about and interact with as few other classes as possible. Also called the Law of Demeter. Similar to the "need to know" principle in organizations.
+* Refactoring - the process of changing code so that external behaviours and interfaces are unchanged, but internal structure is improved.
+* Refused bequest - a code smell; subclasses are inheriting methods that they do not need. It could be an indication that the method should be defined in subclasses.
+* Separation of concerns - a design principle dictating that a program should separate different concerns or functions into separate objects or processes. Allows for easier maintenance and loose coupling.
+* Shotgun surgery - a change in one place that necessitates many other changes; a symptom of tight coupling.
+* Singleton pattern - a design pattern that enforces a single instantiation of a class that is globally accessible.
+* Speculative generality - a code smell/anti-pattern; defining a superclass or interface before it is needed.
+* State pattern - a behavioural pattern for handling requests, taking into account the current state of the object.
+* Structural patterns - design patterns that describe how objects are connected.
+* Subclass - a class that inherits from a parent class, called a superclass.
+* Subtype - a data type that inherits from a parent type, called a supertype.
+* Switch statements - a code smell/anti-pattern; using switch statements to dictate behaviour where polymorphism is a better solution.
+* Template Method pattern - a behavioural pattern that allows for similar behaviour to be inherited by multiple subclasses.
+* View - the display or user-interface component of the MVC pattern. A boundary object or objects are responsible for interfacing with the user.
