@@ -152,3 +152,102 @@ public class FactoryMethodDemo {
     }
 }
 ```
+
+## Facade Pattern
+
+This design pattern simplifies interactions between client classes and complex subsystems.
+
+Facade Design Pattern
+
+* The facade pattern provides a single, simplified interface for client classes, making complex systems easier to use.
+It acts as a wrapper class that encapsulates the subsystem, hiding its complexity from the client.
+
+Implementation Steps
+
+* Design an interface that will be implemented by different classes, which remain hidden from the client.
+* Implement the interface with classes that represent different functionalities, such as checking, saving, and investment accounts.
+* Create a facade class that wraps these implementations, providing a simplified interface for client classes to interact with the subsystem.
+* Client classes use the facade to access functionalities without needing to manage the complexities of the subsystem directly.
+
+
+## Adapter Pattern
+
+`Addresses compatibility issues between different software systems.`
+
+Adapter Design Pattern
+
+* The adapter design pattern allows communication between incompatible software interfaces, similar to how physical adapters connect different types of connectors.
+* It consists of three main components: the client class (which wants to use an external system), the adaptee (the external system), and the adapter class (which translates requests between the client and adaptee).
+
+Implementation Steps
+
+* Step 1: Design the target interface that the adapter will implement for the client.
+* Step 2: Implement the target interface in the adapter class, which converts the client's object into the required format (e.g., JSON).
+* Step 3: The client sends requests to the adapter using the target interface, allowing the adapter to handle the communication with the adaptee without the client needing to know its specifics.
+
+Benefits of Using an Adapter
+
+* The adapter pattern allows existing systems to integrate with new third-party libraries or external systems without requiring significant changes to the existing codebase.
+* It helps maintain system stability by preventing direct modifications to interfaces that may affect other parts of the system.
+
+## Composite Pattern
+
+`This is used to create tree-like structures of objects while treating individual types uniformly.`
+
+Composite Design Pattern
+
+* It allows for the composition of nested structures of objects and uniform handling of these objects through a common interface.
+* The pattern consists of a component interface, composite classes, and leaf classes, enabling polymorphism.
+
+Structure and Implementation
+
+* The component interface serves as a supertype for all classes, ensuring they can be treated uniformly.
+* Composite classes can contain other composite or leaf objects, allowing for recursive composition, visualized as a tree structure.
+
+Example Application
+
+* Using buildings as an example, the component interface can represent buildings, floors, and rooms, with the housing class as the composite and rooms as leaf classes.
+* The implementation in Java involves defining the interface, creating the composite class with methods for managing components, and implementing the leaf class without component management methods.
+* In summary, the Composite Design Pattern simplifies the management of complex structures by enforcing a common type across components, facilitating easier manipulation and understanding of the code.
+
+## Proxy Pattern
+
+`This is used in software systems to create a simplified representation of a real object.`
+
+Proxy Design Pattern
+
+* A proxy object acts as a lightweight version of the original object, allowing for delegation of requests to the real object.
+* It is beneficial in scenarios where the real object is resource-intensive to instantiate or contains sensitive information.
+
+Common Scenarios for Proxy Usage
+
+* Virtual Proxy: Used for resource-intensive objects, such as high-definition images, to manage system resources effectively.
+* Protection Proxy: Controls access to the real object, ensuring users can only access functions permitted by their roles.
+* Remote Proxy: Represents a real object that exists remotely, allowing local interaction with a remote system.
+
+Implementation Steps
+
+* Design the subject interface that both the proxy and real subject classes will implement.
+* Implement the real subject class, which handles the core functionality.
+* Implement the proxy class, which manages requests and checks conditions before delegating to the real subject.
+* The proxy design pattern enhances system security, resource management, and separation of concerns in software applications.
+
+## Decorator Pattern
+
+`This allows for dynamic behavior modification of objects at runtime through aggregation.`
+
+Decorator Design Pattern
+
+* The decorator pattern enables the addition of behaviors to objects without altering their structure, using a "has a" relationship to create a stack of objects.
+* Each object in the stack can augment the behavior of the object below it, allowing for flexible combinations of functionalities.
+
+Implementation Steps
+
+* Define a component interface that all classes will implement, ensuring a common type.
+* Create a concrete component class that implements the interface and serves as the base object.
+* Develop an abstract decorator class that aggregates other components, allowing for stacking.
+* Implement concrete decorators that inherit from the abstract class, each adding specific behaviors.
+
+Example Application
+
+    The pattern can be applied to web pages, where a basic page can be enhanced with various behaviors (like authorization) without creating multiple subclasses for every combination of features. This reduces complexity and improves maintainability.
