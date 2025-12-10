@@ -65,12 +65,12 @@ for right in range(len(arr)):                        //right end of window
 
 | Checkbox | Level | Question                                                                                  | Topics Covered                                 |
 |----------|--------|--------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [x]      | Easy   | Longest substring without repeating characters                                            | Unique Window, HashSet, Expand–Shrink          |
-| [x]      | Easy   | Check if string B is a permutation of any substring of A                                  | Fixed Window, Frequency Count, Anagram Check   |
-| [ ]      | Easy   | Count substrings with at most K distinct characters                                       | Frequency Map, Variable Window                 |
-| [ ]      | Easy   | Longest substring with at most K distinct characters                                      | K-Distinct Constraint, Shrinking Window        |
-| [ ]      | Easy   | Count subarrays where number of odd elements is ≤ K                                       | Conditional Window, Expand–Shrink              |
-| [ ]      | Easy   | Longest subarray with at most K zeroes (flip zeroes to ones)                              | Boolean Constraint, Binary Window Workflow     |
+| [x]      | Easy   | [Longest substring without repeating characters](https://github.com/BHariKrishnaReddy/SystemDesign_DSA/blob/main/DSA_patterns/CompleteSlidingWindow/Longestsubstringwithoutrepeatingcharacters.java)                                            | Unique Window, HashSet, Expand–Shrink          |
+| [x]      | Easy   | [Check if string B is a permutation of any substring of A](https://github.com/BHariKrishnaReddy/SystemDesign_DSA/blob/main/DSA_patterns/CompleteSlidingWindow/CheckIfStringBisPermutationOfAnysubstringofA.java)                                  | Fixed Window, Frequency Count, Anagram Check   |
+| [ ]      | Easy   | [Count substrings with at most K distinct characters]()                                       | Frequency Map, Variable Window                 |
+| [ ]      | Easy   | [Longest substring with at most K distinct characters]()                                      | K-Distinct Constraint, Shrinking Window        |
+| [ ]      | Easy   | [Count subarrays where number of odd elements is ≤ K]()                                       | Conditional Window, Expand–Shrink              |
+| [ ]      | Easy   | [Longest subarray with at most K zeroes (flip zeroes to ones)]()                              | Boolean Constraint, Binary Window Workflow     |
 
 ---
 
