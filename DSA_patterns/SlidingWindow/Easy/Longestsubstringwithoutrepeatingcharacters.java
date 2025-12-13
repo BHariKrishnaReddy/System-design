@@ -7,7 +7,7 @@ Example:
 s = "abcabcbb" → output = 3 (substring "abc")
 */
 
-package DSA_patterns.CompleteSlidingWindow;
+package DSA_patterns.SlidingWindow.Easy;
 
 import java.util.Set;
 import java.util.HashSet;

@@ -38,7 +38,7 @@ int[] freqB = new int[26];
 */
 
 
-package DSA_patterns.CompleteSlidingWindow;
+package DSA_patterns.SlidingWindow.Easy;
 
 public class CheckIfStringBisPermutationOfAnysubstringofA {
 

@@ -69,8 +69,8 @@ for right in range(len(arr)):                        //right end of window
 | [x]      | Easy   | [Check if string B is a permutation of any substring of A](https://github.com/BHariKrishnaReddy/SystemDesign_DSA/blob/main/DSA_patterns/CompleteSlidingWindow/CheckIfStringBisPermutationOfAnysubstringofA.java)                                  | Fixed Window, Frequency Count, Anagram Check   |
 | [ ]      | Easy   | [Count substrings with at most K distinct characters](https://github.com/BHariKrishnaReddy/SystemDesign_DSA/blob/main/DSA_patterns/CompleteSlidingWindow/CountSubstringsWithAtMostKdistinctCharacters.java)                                       | Frequency Map, Variable Window                 |
 | [ ]      | Easy   | [Longest substring with at most K distinct characters](https://github.com/BHariKrishnaReddy/SystemDesign_DSA/blob/main/DSA_patterns/CompleteSlidingWindow/LongestSubstringWithAtMostKdistinctChanracters.java)                                      | K-Distinct Constraint, Shrinking Window        |
-| [ ]      | Easy   | [Count subarrays where number of odd elements is ≤ K]()                                       | Conditional Window, Expand–Shrink              |
-| [ ]      | Easy   | [Longest subarray with at most K zeroes (flip zeroes to ones)]()                              | Boolean Constraint, Binary Window Workflow     |
+| [ ]      | Easy   | [Count subarrays where number of odd elements is ≤ K](https://github.com/BHariKrishnaReddy/SystemDesign_DSA/blob/main/DSA_patterns/CompleteSlidingWindow/CountSubarraysWhereNumberofOddElementsisLessThanK.java)                                       | Conditional Window, Expand–Shrink              |
+| [ ]      | Easy   | [Longest subarray with at most K zeroes (flip zeroes to ones)](https://github.com/BHariKrishnaReddy/SystemDesign_DSA/blob/main/DSA_patterns/CompleteSlidingWindow/LongestSubarrayWithatMostKZeroesflipZeroestoOnes.java)                              | Boolean Constraint, Binary Window Workflow     |
 
 ---
 

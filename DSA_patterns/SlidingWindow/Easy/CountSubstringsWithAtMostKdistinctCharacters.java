@@ -14,7 +14,7 @@ What does “at most K distinct characters” mean?
 */
 
 
-package DSA_patterns.CompleteSlidingWindow;
+package DSA_patterns.SlidingWindow.Easy;
 
 public class CountSubstringsWithAtMostKdistinctCharacters {
 
