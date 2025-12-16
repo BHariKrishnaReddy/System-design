@@ -295,3 +295,56 @@ Implementation in Code
 * The implementation involves creating state objects and a vending machine class that tracks the current state.
 * The state pattern simplifies code by delegating behavior to state objects, reducing the need for complex conditionals.
 
+## Command Pattern
+
+* The Command Pattern creates a command object between the sender and receiver, decoupling them and allowing the sender to issue requests without knowing the details of the receiver.
+* An invoker object is responsible for invoking the command objects to execute tasks, similar to a secretary delivering memos in a company.
+
+Applications of the Command Pattern
+
+* It allows for storing and scheduling requests, enabling commands to be treated as objects that can be manipulated, queued, or executed later.
+* The pattern supports undo and redo functionality, which can be implemented in applications like text editors by maintaining history and redo lists.
+
+Benefits of the Command Pattern
+
+* It decouples objects, simplifying the request process and allowing for easier maintenance and flexibility in software design.
+* The pattern helps separate application logic from user interface code, making it easier to manage and modify user interactions.
+
+## Mediator Pattern
+
+* The Mediator Pattern centralizes communication between objects, reducing complex pairwise interactions.
+* Objects (colleagues) communicate with a mediator instead of directly with each other, allowing for easier management of interactions.
+
+Implementation Details
+
+* Colleagues define an interface for interaction with the mediator, which can be implemented using the Observer pattern or an event infrastructure.
+* The mediator can track events and request actions from colleagues, enhancing coordination.
+
+Usage and Benefits
+
+* Commonly used in dialog boxes with multiple components, where a mediator manages interactions based on user selections.
+* Promotes loose coupling, making code easier to read, maintain, and extend, though it can lead to large, complex mediator classes.
+
+## Observer Pattern
+
+Design pattern that allows a subject to notify its observers about changes in its state.
+
+Subject and Observer Relationship
+
+* The subject (e.g., a blog) maintains a list of observers (subscribers) who are interested in updates.
+* Observers can subscribe to or unsubscribe from the subject to receive notifications about changes.
+
+Key Methods in the Observer Pattern
+
+* The subject has methods to register, unregister, and notify observers.
+* Observers implement an interface with an update method to receive notifications from the subject.
+
+Implementation in Code
+
+* The subject class manages the list of observers and calls the update method on each observer when a change occurs.
+* The observer class implements the update method to handle the notifications and update its state accordingly.
+
+Benefits of the Observer Pattern
+
+* It simplifies the management of multiple observers by allowing the subject to handle notifications.
+* This pattern is useful in scenarios where many objects depend on the state of a single object, facilitating efficient communication and updates.
