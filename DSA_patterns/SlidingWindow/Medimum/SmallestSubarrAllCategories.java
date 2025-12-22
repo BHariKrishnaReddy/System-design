@@ -1,6 +1,7 @@
 package DSA_patterns.SlidingWindow.Medimum;
 
 /*
+
 You’re given an array of “category labels” (strings/ints). You must find the smallest contiguous subarray that contains at least one occurrence of every category that exists anywhere in the array.
 Example:
 labels = [A, B, A, C, B, A]
