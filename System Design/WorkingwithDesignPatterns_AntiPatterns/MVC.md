@@ -45,3 +45,23 @@ Now every FlyingBird truly can fly → substitution is safe
 Software entities (classes, modules, functions) should be open for extension but closed for modification.
 So: when requirements change, you should be able to add new behavior by adding new code, not by editing old working code.
 
+# Dependency Inversion Principle
+
+High-level code (business logic) should not depend on low-level code (details). Both should depend on abstractions (interfaces).
+
+And: abstractions shouldn’t depend on details; details depend on abstractions.
+
+* High-level = “what to do” (rules, workflows, use-cases)
+* Low-level = “how it’s done” (DB, HTTP clients, frameworks, SDKs)
+
+DIP says: your “what to do” shouldn’t import/know concrete “how it’s done”.
+It should talk to an interface, and the concrete stuff plugs in from outside.
+
+<img width="863" height="325" alt="Image" src="https://github.com/user-attachments/assets/da21779d-139e-4217-8dbe-289790a6625d" />
+
+The Dependency Inversion Principle is a means to:
+
+* Change the referencing of concrete classes from being direct to indirect
+* Generalize the behaviors of your concrete classes into abstract classes and interfaces
+* Have client classes interact with your sysrem through a generalization rather than directly with concrete resources
+* Put emphasis on high level dependency over low level concrete dependency
