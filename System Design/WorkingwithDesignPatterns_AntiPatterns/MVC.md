@@ -65,3 +65,44 @@ The Dependency Inversion Principle is a means to:
 * Generalize the behaviors of your concrete classes into abstract classes and interfaces
 * Have client classes interact with your sysrem through a generalization rather than directly with concrete resources
 * Put emphasis on high level dependency over low level concrete dependency
+
+# Composing Objects Principle
+
+- This principle states that classes should achieve code reuse through aggregation rather than inheritance.
+
+The composite design pattern and decorator design pattern use this design principle. Both of these patterns compose concrete classes in order to build more complex objects at one time.
+
+
+### Advantages
+* Aggregation and delegation offer less coupling thant inheritance
+* "Arms length" relationship enter image description here
+* Provides your system with more flexibility
+* Dynamically change the behaviod of objects at run time
+
+### Disadvantages
+
+- The biggest drawback of composition is that you must provide implementations for all behaviour, without the benefit of inheritance to share code. That means that you might have very similar implementation across classes.
+
+Some good tips and questions to help you decide whether the best solution for your system is composition or inheritance include:
+
+1. You need to examine the needs of your system in order to determine whihc design principle is appropriate
+2. Do you have a set of related classes or unrelated classes?
+3. What is a common behaviour between them?
+4. Do you need specialized classes to handle specific cases or do you need a different implementation of the same behaviour?
+
+# Interface Segregation Principle
+
+- The interface segregation principle states that a class should not be forced to depend on methods it does not use. This means that any classes that implement an interface, should not have "dummy" implementation of any methods defined in the interface. Instead, you should split large interfaces into smaller generalizations.
+
+Bad example:
+
+<img width="1034" height="582" alt="Image" src="https://github.com/user-attachments/assets/95cedf9b-87ac-403b-a1e7-ca7e2d23e89c" />
+
+
+Good exmaple:
+
+<img width="970" height="585" alt="Image" src="https://github.com/user-attachments/assets/a0bd6ee2-e72b-432a-8ba3-877834f2b76c" />
+
+* Sometimes it isn't always clear how to properly segregate your interface or to predict future changes in requirements that will need interfaces to be split up. Having a system with well-defined interfaces will help you to see these segregation points better.
+
+* You should always strive to be as precise as possible when designing interfaces. Remember that they are descriptions of what parts of your system can do, and the better the description, the easier it will be to create, update and maintain your software. 
